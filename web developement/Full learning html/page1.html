@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- charset is a attribute -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this is my learning mode</title>
+    <link rel="Stylesheet" href="page2.css">
+    <!-- <script src="page3" ></script> -->
+    </head>
+<body>
+
+
+
+
+
+    <!-- lorem40 write karne se ek paragraph aa jata hai 
+    alt z se line ek proper formate me aa jaati hai-->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo, qui totam? Molestiae, veniam id quibusdam deleniti modi ad laudantium adipisci iste optio itaque sapiente necessitatibus error laborum cupiditate ex ut porro minima accusantium suscipit quaerat quasi minus voluptatem commodi. Voluptatem</p>
+
+    <!-- if we want to write a tag multiple time so we can write *n ex= .p*4 (this is called emit) -->
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <br> tag for break the line 
+    <hr> tag for the horizontal line it is a self closing tag.
+    <!-- ctr+enter use for the new line -->
+    <!-- ctr+/ is use to comment the line -->
+    <br>
+
+    <a href="http://google.com" target="_blank">this is way to reach on google</a>
+    <!-- In a href target blank is use for open new tab -->
+    <br>
+
+    <!-- for attach the image use img tag, alt is use for passing the message if the image is not shown -->
+    <img src="address of image " alt="image is not loading">
+
+    <br>
+    <b>Bold</b>
+    <br>
+    <i>italic </i><br>
+    <u>  under line </u><br>
+    <big>this is show big text</big><br>
+    <p>H<sub>2</sub></p><br>
+    <p>3<sup>2</susp> = 9</p>
+    <pre>it is use to print data as it is without          ignoring spaces</pre>
+
+    
+<hr>
+
+<!-- list
+unordered list 
+ -->
+
+<ul type="circle">
+    <li>amisha</li>
+</ul>
+
+<!--  odered list -->
+<ol type="a">
+    <li>hello</li>
+    <li>Hii</li>
+</ol>
+
+<!-- discription list -->
+<dl>
+    <dt>page</dt>
+    <dd>this is my </dd>
+</dl>
+
+<hr>
+
+<!-- Table in HTML 
+<tr> used for table row
+<td> used for table data
+<th> use for table header
+-->
+<table>
+    <thead>
+   <caption>Student data</caption> 
+
+    <tr>
+        <!-- <th>
+            Name
+        </th>
+        <th>
+            Roll No.
+        </th> -->
+        <th colspan="2">Information</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>Amisha</td>
+        <td>09</td>
+    </tr>
+
+    <tr>
+        <td>KumKum</td>
+        <td>10</td>
+    </tr>
+</tbody>
+</table>
+
+<hr>
+<pre>
+
+
+</pre>
+
+
+
+
+
+
+
+
+
+
+<!-- ----------- -->
+
+<!-- Forms in html 
+    forms are used to collect data
+    Ex- sign in/ login / help request/ contact me
+
+    <form>
+        form content
+    </form>
+-->
+
+<!--  Action in forms 
+    action attribute define what action perform when form submitted 
+
+    <form action="/action.php">
+ -->
+
+ <h4>Registration form</h4>
+<form action="/action.php">
+<input type="text" placeholder="User Name"><br>
+<input type="password" placeholder="password"><br>
+
+<!-- radio button -->
+<!-- <input type="radio" value="class 11" name="class">class 11
+<input type="radio" value="class 12" name="class">class 12 -->
+
+
+
+<!-- =========== -->
+
+<!-- Label in radio button , using label iff user click on the text then radio button got clicked -->
+
+<h5>Select your class</h5><br>
+<label for="101">
+    <input type="radio" value="class 11" name="class" id="101">Class 11
+</label>
+<br>
+<label for="102">
+    <input type="radio" value="class 12" name="class" id="102">class 12
+</label><br>
+
+<h5>Select your subject</h5>
+
+<label for="math">
+    <input type="checkbox" value="math" name="subject" id="101">Math
+</label><br>
+<label for="phy">
+    <input type="checkbox" value="phy" name="subject" id="102">Physics
+</label><br>
+<label for="chemistry">
+    <input type="checkbox" value="chemistry" name="subject" id="103">chemistry
+</label><br>
+<label for="com">
+    <input type="checkbox" value="com" name="subject" id="104">Computer
+</label><br>
+<br>
+<!-- dropdown -->
+<h5>Select your city</h5>
+<select name="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Agra">Agra</option>
+    <option value="khajuraho">Khajuraho</option>
+</select>
+<br>
+<br>
+
+
+<!--for empty box use text area for feedback  -->
+<textarea name="feedback" id="101" placeholder="Please give your valuable feedback" rows="5">feedback</textarea>
+<br><br>
+
+<input type="submit" value="submit">
+
+
+
+</form>
+
+<br>
+<pre>
+
+    <hr>
+
+</pre>
+
+<h5>Wikipedia</h5>
+<!-- iframe tag ka use kisi bhi site ki puri working apni side par daal sakte hai like serching etc -->
+<iframe src="https://en.wikibooks.org/wiki/Main_Page" width="500px"></iframe>
+
+<br>
+<pre>
+
+    <hr>
+
+</pre>
+
+<!-- video tag
+attribute
+controls
+height
+width
+loop
+autoplay
+
+-->
+
+<h5>video</h5>
+
+<video src="/link of video" controls loop>Html video</video>
+
+
+<pre>
+
+
+</pre>
+<hr>
+
+</body>
+</html>

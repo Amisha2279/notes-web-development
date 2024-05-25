@@ -1,0 +1,213 @@
+h3{
+    color:brown;
+}
+
+/* forground color- which is shown in front 
+   background color-which is shown in background
+*/
+button{
+    color:brown;
+    background-color: rgb(187, 213, 141);
+}
+
+/* Color system
+ rgb - red green blue - R=0-255, G=0-155, B=0-155
+ Hex - Hexadecimal - color: R=0-ff, G=0-ff, B=0-ff
+*/
+/* url - https://coolors.co/   for color combinations    */
+
+body{
+    background-color: #81B19B;
+}
+
+/*Selectors
+
+Universal selecter *{} - it use style on whole document
+
+Element selecter h1{}  - it is use for single element
+
+Id selector #myid{} - all element gave the specific id, we can't use same id name in multiple tags
+
+Class selector .myclass{} - we can use same id name in multiple tags
+
+*/
+
+*{
+    color: rgb(230, 216, 216);  
+}
+
+#first{
+    color: #073231;
+    ;
+}
+
+.Second{
+    color: rgb(103, 64, 138);
+}
+
+#box{
+    background-color: #87607c;
+    color: aliceblue;
+}
+
+/* Text properties
+
+text-align: left/right/center; in CSS3 start/right/end
+
+text-decoration - underline/overline/line-through/none-----------  learn text decoration   https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+
+font weight - normal/ bold/ bolder/ lighter or 100-900    font-weight: 200;
+
+font family
+
+*/
+h4{
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+p{
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Units in CSS -Asolute , Relative
+
+pixels
+96px = 1 inch
+
+
+*/
+
+#one{
+    font: size 25px; ;
+}
+
+#two{
+    font-size: 38px;
+}
+/* line hight== verticle spacing */
+
+#three{
+line-height: 15px;
+}
+
+/* Text transform = upercase/ lowercase/capitalize/ none */
+
+#four{
+    line-height: 25px;
+    text-transform: capitalize;
+    }
+
+    /* Box model
+    height, width, Border, padding, margin
+
+    Border - border width, border style-solid/dotted/dashed, border color
+
+    border-radious:50px/50%
+    
+    */
+
+    #model{
+        background-color: #87607c;
+        height: 50px;
+        width: 500px;
+        border-width: 2px;
+        border-style: solid;
+        border-color: #073231;
+     /* border:2px solid brown            it is called shorthand */
+        text-align: center;
+    }
+
+    #circle{
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #073231;
+        border-radius: 50px;
+        text-align: center;
+        
+        
+    }
+    /* padding - top right bottom left */
+
+    #circle1{
+        height: 100px;
+        width: 100px;
+        background-color: bisque;
+        border-style: solid;
+        border-width: 4px;
+        border-color: #073231;
+        padding-left: 5px;
+        padding-right: 50px;
+     /* padding: 1px 2px 3px 7px 
+        padding:50px;                        */
+        margin-top: 50px;
+    }
+
+    /* Margin  same as padding */
+
+    /*  Display property
+    
+    inline - take only the space require no margin no padding like buttons
+    block - take full space available in width
+    inline-block - similar to inline but can set margin & padding
+    none - To remove element from document flow
+
+    one more Visibility
+    visibility:none;
+    to hide from display "means its having but not visible"
+
+
+ */
+
+
+    .square{
+        height: 100px;
+        width: 100px;
+        margin: 25px;
+        padding: 25px;
+        /* display: inline; */
+        display: inline-block;
+       
+    }
+
+    /* Alpha Channel
+    Opacity(0 to 1)
+    RGBA
+
+    */
+
+    #ALPHA{
+        height: 100px;
+        width: 100px;
+        margin: 25px;
+        padding: 25px;
+        background-color: rgba(255, 0, 0, 0.4);
+    }
+
+/* Units in Css 
+Related
+ % - it come with parent comparision 
+ em - it is use for font size of chile comparision of parents
+ rem - Root em , Font size of the root element
+ vh - view port height / as a screen height
+*/
+
+#boxParent{
+    height: 100px;
+    width: 100px;
+    background-color: #073231;
+    font-size: 10px;
+}
+
+#boxChild{
+    height: 50px;
+    width: 30%;
+    background-color: rgba(255, 0, 0, 0.395);
+    margin-left: 10%;
+    font-size: 2em;  /* means two time of parent 2em=20px */
+}

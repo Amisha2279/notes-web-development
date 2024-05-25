@@ -1,0 +1,33 @@
+.navbar{
+    background-color: rgb(244, 215, 177);
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+a{
+     text-decoration: none; /* link ke neeche ki line remove ho jati hai*/
+     color: black;
+}
+
+li{
+    list-style-type: none;
+
+}
+
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: darkcyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#inner{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(76, 158, 161);
+   
+
+}

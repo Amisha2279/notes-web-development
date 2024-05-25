@@ -1,0 +1,78 @@
+
+/* Positon - it is said how element is positioned in a document 
+Position: static/relative/ absolute/fixed
+Z-index - it decide the stack level of element
+overlaping element
+
+
+z-index:auto(0);
+z-index:1/2/3....;
+z-index: -1/-2/..;
+
+*/
+
+
+div{
+    height: 100px;
+    width: 100px;
+    border: 3px solid rgb(8, 8, 7);
+    display: inline-block;
+
+}
+
+/* static- default position(the Top,right, bottom,left and z-index properties have no effect) */
+
+#basebox1{
+    background-color: #4b24e9cb;
+    position: static;
+
+}
+
+/* relative - element is relative to itself.(The top, right,bottom,left and z-index will work) */
+
+#basebox2{
+    background-color: #e97624fe;
+    position: relative;
+    top: 20px;
+    left: 10px;
+
+}
+/* absolute - position relative to its closest position(non-static) ancestor(parent).(removed from flow) */
+/* right-now body tag its ancestor then box take the top value from the document */
+#basebox3{
+    background-color: #24e98d;
+    position: absolute;
+    /* top: 500px; */
+    left: 200px;
+
+}
+
+/* fixed - positioned relative to browser.(removed from flow) */
+
+#basebox4{
+    background-color: #e924cc;
+    position: fixed;
+    top: 0;
+
+}
+
+/* sticky - position based on user's scroll position */
+#basebox5{
+    background-color: #fb0f0f;
+    position: sticky;
+    top: 0;
+    z-index: -1;
+}
+
+/* Background Image 
+   Background size : cover/contain/auto;  mostly use cover
+*/
+
+#box1{
+    background-image: url(nature_photo.avif);
+    background-size: cover;
+    /* background-size: auto; */
+    /* background-size: contain; */
+    /* background-repeat:no-repeat */
+
+}
